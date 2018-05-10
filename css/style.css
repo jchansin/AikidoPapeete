@@ -1,0 +1,74 @@
+body {
+	background-color: #ffff99;
+}
+
+
+/* Top navigation code inspired by: https://www.w3schools.com/howto/howto_js_topnav.asp */
+
+	/* Style the links inside the navigation bar */
+	.navbar a {
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 15px;
+	}
+
+	/* Change the color of links on hover */
+	.navbar a:hover {
+		background-color: #ddd;
+		color: black;
+		font-weight: bold;
+	}
+
+.navbar a.active {
+	background-color: #4CAF50;
+	font-weight: bold;
+}
+	
+.nav-item {
+	list-style-type: none;
+	margin: auto;
+}
+
+#header { 
+	background:#555;
+	text-align:center; 
+	height: 6%;
+}
+	
+#logo {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#title {
+	margin: auto;
+	/* font-family: 'Dancing Script', cursive; */
+	font-size: 7vmin;
+	text-shadow: 1px 1px white;
+	font-weight: bold;
+}
+
+#breakingNews {
+	background-color: white;
+	height: 30px;
+	color: black;
+	font-weight: bold;
+	margin: auto;
+}
+	
+.content {
+	padding-top: 200px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+#welcomeText {
+	text-align: center;
+	padding-right: 15%;
+	padding-left: 15%;
+}
