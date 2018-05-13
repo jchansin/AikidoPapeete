@@ -54,11 +54,9 @@ body {
 }
 
 #breakingNews {
-	background-color: white;
-	height: 30px;
-	color: black;
 	font-weight: bold;
 	margin: auto;
+	text-align: center;
 }
 	
 .content {
