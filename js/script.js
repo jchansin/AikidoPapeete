@@ -1,9 +1,7 @@
 function adjustOffset() {
     let checkForAlert=Boolean(document.getElementsByClassName('alert'));
-    console.log(checkForAlert);
     if(checkForAlert) {
-        let elem=document.getElementById("mainContent");
-        console.log(elem);
+        let elem=document.getElementById('mainContent');
         let cs=document.defaultView.getComputedStyle(elem, null);
         let offsetValue = cs.getPropertyValue('padding-top');
 
@@ -14,7 +12,6 @@ function adjustOffset() {
 
 function resetOffsetToDefault() {
     let elem=document.getElementById('mainContent');
-    console.log(elem);
     let cs=document.defaultView.getComputedStyle(elem, null);
     let offsetValue = cs.getPropertyValue('padding-top');
 

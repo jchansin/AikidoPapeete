@@ -2,25 +2,20 @@ body {
 	background-color: #ffff99;
 }
 
+.navbar a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 15px;
+}
 
-/* Top navigation code inspired by: https://www.w3schools.com/howto/howto_js_topnav.asp */
-
-	/* Style the links inside the navigation bar */
-	.navbar a {
-		float: left;
-		color: #f2f2f2;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-size: 15px;
-	}
-
-	/* Change the color of links on hover */
-	.navbar a:hover {
-		background-color: #ddd;
-		color: black;
-		font-weight: bold;
-	}
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+	font-weight: bold;
+}
 
 .navbar a.active {
 	background-color: #4CAF50;
