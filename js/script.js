@@ -1,3 +1,4 @@
+// Baisse la position du contenu de la page si class="alert" est détecté
 function adjustOffset() {
     let checkForAlert=Boolean(document.getElementsByClassName('alert'));
     if(checkForAlert) {
@@ -10,6 +11,7 @@ function adjustOffset() {
     }
 }
 
+// Remonte la position du contenu de la page quand l'alerte est fermée
 function resetOffsetToDefault() {
     let elem=document.getElementById('mainContent');
     let cs=document.defaultView.getComputedStyle(elem, null);

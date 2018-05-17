@@ -14,45 +14,58 @@
 </head>
 
 <body>
+	
 	<div class="container-fluid fixed-top" id="header_container">
 		<nav class="fixed-top">
 		
 			<div class="row" id="header">
-				<div class="col-sm-1" id="logo"><img src="asset/logo.gif"></div>
-				<div class="col-sm-11" id="title"><center>Dojo d'aikido de Papeete</center></div>
+				<div class="col-xs-1 col-sm-1 header" id="logo">
+					<img src="asset/logo.gif" class="img-fluid img-thumbnail" alt="Logo">
+				</div>
+	
+				<div class="col-xs-11 col-sm-11 header" id="title">
+					Dojo d'aikido de Papeete
+				</div>
+	
 			</div>
 			
-			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Accueil</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="aikido.html">L'aikido</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="cours.html">Les cours</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-center" id="topNavbar">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#topNavbarButtons">
+						<span class="navbar-toggler-icon"</span>                        
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="topNavbarButtons">
+					<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+					<li class="nav-item"><a class="nav-link" href="aikido.html">L'aikido</a></li>
+					<li class="nav-item"><a class="nav-link active" href="cours.html">Les cours</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+				</div>
 			</nav>
-			
-			</nav>
+
+			<div class="alert alert-info alert-dismissible fade show" id="breakingNews">
+				<button type="button" class="close" data-dismiss="alert" aria-label="close" id="closeAlertButton" onclick="setTimeout(resetOffsetToDefault, 100);">&times;</button>
+				Attention : le cours du 28/04/2018 s'arrêtera à 10h au lieu de 12h.	
+			</div>
+	
+		</nav>
 	</div>
 	
 	<div class="content" id="mainContent">
 		
 		<div class="row">
 			<div class="col-sm-4">
-				<u>Horaires des cours (le samedi matin uniquement) :</u><br/>
-					<ul>
-						<li>de 8h à 9h30 : cours "basique"</li>
-						<li>de 9h30 à 10h30 : cours d'armes</li>
-						<li>de 10h30 à 12h : cours "avancé"</li>
-					</ul>
-					Vous pouvez participer à tous les cours, quel que soit votre niveau ! Le cours "avancé" se focalise plus sur des sensations internes importantes à haut niveau, mais il est parfaitement possible de le suivre en tant que débutant.
+				<p>
+					<u>Horaires des cours (le samedi matin uniquement) :</u><br/>
+						<ul>
+							<li>de 8h à 9h30 : cours "basique"</li>
+							<li>de 9h30 à 10h30 : cours d'armes</li>
+							<li>de 10h30 à 12h : cours "avancé"</li>
+						</ul>
+						Vous pouvez participer à tous les cours, quel que soit votre niveau ! Le cours "avancé" se focalise plus sur des sensations internes importantes à haut niveau, mais il est parfaitement possible de le suivre en tant que débutant.
+				</p>
 			</div>
 
 			<div class="col-sm-4">

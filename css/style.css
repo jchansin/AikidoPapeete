@@ -1,14 +1,23 @@
 body {
 	background-color: #ffff99;
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 1.9em;
+}
+
+.navbarContainer {
+	background:#555;
 }
 
 .navbar a {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 15px 15px;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 1em;
 }
 
 .navbar a:hover {
@@ -27,10 +36,10 @@ body {
 	margin: auto;
 }
 
-#header { 
+.header { 
 	background:#555;
 	text-align:center; 
-	height: 6%;
+	width:100%;
 }
 	
 #logo {
@@ -40,21 +49,30 @@ body {
 	margin-left: auto;
 }
 
-#title {
+#title { 
 	margin: auto;
 	/* font-family: 'Dancing Script', cursive; */
-	font-size: 7vmin;
-	text-shadow: 1px 1px white;
+	font-size: 7vmin; /*Taille variable pour les petits écrans*/
+	text-shadow: 1px 1px white; /*Fait ressortir le texte sur les fonds sombres*/
 	font-weight: bold;
+	text-align: center;
 }
 
-#breakingNews {
+#topNavbar {
+	width:100%;
+	margin:0;
+}
+
+/*Style des alertes*/
+#breakingNews { 
 	font-weight: bold;
 	margin: auto;
 	text-align: center;
+	width: 100%;	
 }
 	
-.content {
+/*Ajuste le contenu pour accomoder la navbar fixe*/
+.content { 
 	padding-top: 200px;
 	padding-right: 50px;
 	padding-left: 50px;
