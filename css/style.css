@@ -36,10 +36,18 @@ h1 {
 	margin: auto;
 }
 
-.header { 
+#header { 
 	background:#555;
 	text-align:center; 
-	width:100%;
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	background:#555;
+	text-align:center; 
+	width: 100%;
+	height: 100%;
 }
 	
 #logo {
@@ -51,9 +59,9 @@ h1 {
 
 #title { 
 	margin: auto;
-	/* font-family: 'Dancing Script', cursive; */
+	font-family: 'Dancing Script', cursive;
 	font-size: 7vmin; /*Taille variable pour les petits écrans*/
-	text-shadow: 1px 1px white; /*Fait ressortir le texte sur les fonds sombres*/
+	text-shadow: 1px 1px white, 1px -1px white; /*Fait ressortir le texte sur les fonds sombres*/
 	font-weight: bold;
 	text-align: center;
 }
@@ -66,24 +74,31 @@ h1 {
 /*Style des alertes*/
 #breakingNews { 
 	font-weight: bold;
+	font-size: 1em;
 	margin: auto;
 	text-align: center;
 	width: 100%;	
 }
 	
-/*Ajuste le contenu pour accomoder la navbar fixe*/
+/*Contenu principal de la page*/
 .content { 
-	padding-top: 200px;
+	padding-top: 200px; /*Ajuste le contenu pour accommoder la navbar fixe*/
 	padding-right: 50px;
 	padding-left: 50px;
 }
 
 #welcomeText {
 	text-align: center;
-	padding-right: 15%;
-	padding-left: 15%;
+	padding-right: 10%;
+	padding-left: 10%;
 }
 
 footer {
 	text-align: center;
+}
+
+#horaires {
+	text-align: center;
+	padding-right: 15%;
+	padding-left: 15%;
 }

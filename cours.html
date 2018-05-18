@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"/> 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -29,14 +30,14 @@
 	
 			</div>
 			
-			<nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-center" id="topNavbar">
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="topNavbar">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#topNavbarButtons">
 						<span class="navbar-toggler-icon"</span>                        
 					</button>
 				</div>
 				<div class="collapse navbar-collapse" id="topNavbarButtons">
-					<ul class="navbar-nav mr-auto">
+					<ul class="navbar-nav mr-auto mx-auto">
 					<li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
 					<li class="nav-item"><a class="nav-link" href="aikido.html">L'aikido</a></li>
 					<li class="nav-item"><a class="nav-link active" href="cours.html">Les cours</a></li>
@@ -45,18 +46,13 @@
 				</div>
 			</nav>
 
-			<div class="alert alert-info alert-dismissible fade show" id="breakingNews">
-				<button type="button" class="close" data-dismiss="alert" aria-label="close" id="closeAlertButton" onclick="setTimeout(resetOffsetToDefault, 100);">&times;</button>
-				Attention : le cours du 28/04/2018 s'arrêtera à 10h au lieu de 12h.	
-			</div>
-	
 		</nav>
 	</div>
 	
 	<div class="content" id="mainContent">
 		
-		<div class="row">
-			<div class="col-sm-4">
+		<div class="row" id="horaires">
+			<div class="col-sm-12">
 				<p>
 					<u>Horaires des cours (le samedi matin uniquement) :</u><br/>
 						<ul>
@@ -67,19 +63,25 @@
 						Vous pouvez participer à tous les cours, quel que soit votre niveau ! Le cours "avancé" se focalise plus sur des sensations internes importantes à haut niveau, mais il est parfaitement possible de le suivre en tant que débutant.
 				</p>
 			</div>
+		</div>
 
-			<div class="col-sm-4">
+		<br/>
+		<hr>
+		<br/>
+
+		<div class="row">
+			<div class="col-sm-6">
 				<u>Tarifs et documents requis:</u><br/>
 				<p>Les cotisations initiales s'élèvent à :
 				<ul>
-					<li>15 000 xpf pour les adultes (plus de 16 ans)</li>
-					<li>10 000 xpf pour les enfants</li>
+					<li>15 000 xpf pour les adultes (plus de 16 ans),</li>
+					<li>10 000 xpf pour les enfants,</li>
 					<li>des tarifs dégressifs s'appliquent pour les membres d'une même famille.</li>
 				</ul></p>
 				<p>A la cotisation s'ajoute le coût de la licence pour l'adhésion à la Fédération Polynésienne d'Aikido, qui s'élève à  :
 				<ul>
-					<li>5 000 xpf par adulte</li>
-					<li>3 000 xpf par enfant</li>
+					<li>5 000 xpf par adulte,</li>
+					<li>3 000 xpf par enfant,</li>
 					<li>les coûts de licence ne sont pas dégressifs.</li>
 				</ul>
 				Pour connaître le tarif exact de votre inscription si vous venez en famille, contactez un des responsables du club (<a href="contact.html">page "Contact"</a>).</p>
@@ -91,7 +93,7 @@
 				</ul></p>
 			</div>
 
-			<div class="col-sm-4">
+			<div class="col-sm-6">
 				<u>Equipement :</u><br/>
 				<p>Pour votre premier cours d'essai, vous pouvez venir en vêtements de sport (longs).</p>
 				<p>Si vous pratiquez régulièrement, vous devrez acheter un <i>keikogi</i>, qu'on appelle souvent un kimono. Vous en trouverez dans les grands magasins de sport. Vous pouvez choisir la version "judo", plus épaisse mais qui amortit mieux les chutes, ou la version "karaté", plus légère. Le keikogi se compose d'un pantalon et d'une veste, auxquels il faudra ajouter une ceinture (<i>obi</i>), blanche pour les débutants.</p>

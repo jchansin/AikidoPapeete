@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"/>  -->
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"/> 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -31,14 +31,14 @@
 	
 			</div>
 			
-			<nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-center" id="topNavbar">
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="topNavbar">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#topNavbarButtons">
 						<span class="navbar-toggler-icon"</span>                        
 					</button>
 				</div>
 				<div class="collapse navbar-collapse" id="topNavbarButtons">
-					<ul class="navbar-nav mr-auto">
+					<ul class="navbar-nav mr-auto mx-auto">
 					<li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
 					<li class="nav-item"><a class="nav-link" href="aikido.html">L'aikido</a></li>
 					<li class="nav-item"><a class="nav-link" href="cours.html">Les cours</a></li>
@@ -48,8 +48,9 @@
 			</nav>
 
 			<div class="alert alert-info alert-dismissible fade show" id="breakingNews">
+				<!-- Délai de 100ms avant l'exécution de la fonction pour coïncider avec le temps nécessaire pour que l'alerte disparaisse -->
 				<button type="button" class="close" data-dismiss="alert" aria-label="close" id="closeAlertButton" onclick="setTimeout(resetOffsetToDefault, 100);">&times;</button>
-				Attention : le cours du 28/04/2018 s'arrêtera à 10h au lieu de 12h.	
+				Attention : le cours du 23/06/2018 est déplacé au dojo de Paea.	
 			</div>
 	
 		</nav>
@@ -59,13 +60,13 @@
 	
 	<div class="content" id="mainContent">
 		
-		<div class="row">
-			<div class="col-sm-12" id="welcomeText">
+
+		<div id="welcomeText">
 			<h1>Bienvenue sur le site du dojo d'aikido de Vaitavatava à Papeete !</h1></br>
 			</br>
 			Que vous soyez débutant(e), pratiquant(e) confirmé(e), ou tout simplement intéressé(e) par notre belle discipline, vous trouverez ici tous les renseignements nécessaires.<br>
-			</div>
 		</div>
+
 		
 		<br/>
 		<hr>
@@ -73,11 +74,12 @@
 
 		<div class="row">
 			<div class="col-sm-5">
-				<a href="aikido.html"><img src="asset/index-aikido-link.jpg" class="img-responsive img-thumbnail"></a>
+				<a href="aikido.html"><img src="asset/index-aikido-link.jpg" class="img-responsive img-thumbnail"></a><br/>
 			</div>
 
 			<div class="col-sm-7">
-				"L'aikido", kesako au juste ? Cette discipline est un art martial japonais, créé par Morihei Ueshiba au cours de la première moitié du 20è siècle, après de nombreuses années d'études des styles classiques et de recherche. Avec le judo et le karaté, il fait partie des 3 "Grands Budōs" modernes. Venez en apprendre plus <a href="aikido.html">ici</a>.
+				<p>"L'aikido", kesako au juste ? Cette discipline est un art martial japonais, créé par Morihei Ueshiba au cours de la première moitié du 20è siècle, après de nombreuses années d'études des styles classiques et de recherche personnelle. Avec le judo et le karaté, il fait partie des 3 "Grands Budōs" modernes.</p>
+				<p>Venez en apprendre plus <a href="aikido.html">ici</a>.</p><br/>
 			</div>
 
 		</div>
@@ -88,11 +90,14 @@
 
 		<div class="row">
 			<div class="col-sm-7">
-				Horaires, tarifs, équipement, professeurs... Pour tout savoir sur les cours que nous dispensons, c'est par <a href="cours.html">ici</a> !
+				<p>Des questions sur les horaires ? <br/>
+				Les tarifs ? <br/>
+				L'équipement ? </p>
+				<p>Pour tout savoir sur les cours que nous dispensons, c'est par <a href="cours.html">ici</a> !</p><br/>
 			</div>
 
 			<div class="col-sm-5">
-				<a href="cours.html"><img src="asset/index-cours-link.jpg" class="img-responsive img-thumbnail"></a>
+				<a href="cours.html"><img src="asset/index-cours-link.jpg" class="img-responsive img-thumbnail"></a><br/>
 			</div>
 
 		</div>
@@ -103,11 +108,12 @@
 
 		<div class="row">
 			<div class="col-sm-5">
-				<a href="contact.html"><img src="asset/index-contact-link.jpg" class="img-responsive img-thumbnail"></a>
+				<a href="contact.html"><img src="asset/index-contact-link.jpg" class="img-responsive img-thumbnail"></a><br/>
 			</div>
 
 			<div class="col-sm-7">
-				Vous avez une question ? Besoin de plus d'informations ? Ou bien vous cherchez tout simplement à nous trouver ? <a href="contact.html">Par ici</a> pour nous contacter !
+				<p>Vous avez une question ? Besoin de plus d'informations ? Ou bien vous cherchez tout simplement à savoir où nous rejoindre ?</p>
+				<p><a href="contact.html">Par ici</a> pour nous contacter !</p><br/>
 			</div>
 
 		</div>
